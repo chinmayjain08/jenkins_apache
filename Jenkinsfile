@@ -4,6 +4,7 @@ pipeline{
         stage('checkout'){
             steps{
                 git url: 'https://github.com/chinmayjain08/jenkins_apache.git', branch: 'main'
+                
             }
         }
         stage('deploy'){
