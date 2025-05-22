@@ -9,8 +9,8 @@ pipeline{
         stage('deploy'){
             steps{
                 sh '''
-                  rm -rf /var/www/html
-                  cp -r website/* var/www/html
+                  sudo rm -rf /var/www/html
+                  sudo cp -r website/* var/www/html
                 '''
             }
         }
