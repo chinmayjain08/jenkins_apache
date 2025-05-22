@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('checkout'){
             steps{
-                git url='github.com/chinmayjain08/jenkins_apache' branch='main'
+                git url: 'https://github.com/chinmayjain08/jenkins_apache.git', branch: 'main'
             }
         }
         stage('deploy'){
