@@ -1,0 +1,10 @@
+# .github/workflows/receive-dispatch.yml
+on:
+  repository_dispatch:
+    types: [test-trigger]
+
+jobs:
+  handle_dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Triggered from another Repo!"
